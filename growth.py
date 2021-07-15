@@ -364,9 +364,8 @@ def stats(path):
             for year in years:
                 # If the image corresponds to the particular year
                 if filename.startswith(year):
-                    # If we detect sufficient text (15 characters is the average of 3 words), we classify it as an infographic
                     if filename in infographics:
-                        # Increment number of images with text
+                        # Increment number of infographics
                         num_infographics[year] += 1
                     # Increment total images
                     num_images[year] += 1
